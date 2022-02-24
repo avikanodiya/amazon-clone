@@ -15,7 +15,7 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ### `node app/nodemon app`
-run this command afer 'cd server' 
+run this command afer 'cd server' .\
 Runs the Node server
 
 ### `npm test`
