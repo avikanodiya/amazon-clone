@@ -1,0 +1,16 @@
+const express = require("express")
+const router = express.Router()
+const { addOrder, getOrder, getCategoryProduct, subCategory, addProduct, getByCompany, getProduct, singleProduct, getCat, getBrand } = require('../domain/product.domain')
+
+router.post('/addproduct', addProduct)
+router.post('/addorder', addOrder)
+router.get('/getorder', getOrder)
+router.get('/getcategory/:categoryId', getCategoryProduct)
+router.get('/getsubcategory/:subcategoryId', subCategory)
+router.get('/getproduct', getProduct)
+router.get('/getproduct/:id', singleProduct)
+router.get('/getbycompany/:company', getByCompany)
+router.get('/getcategory', getCat)
+router.get('/getbrand', getBrand)
+// router.post('/create/orderId', orderCapture)
+module.exports = router;
